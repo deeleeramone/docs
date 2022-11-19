@@ -35,6 +35,10 @@ As part of the installation process, Python 3.9.6 will be installed. While other
 
 Miniconda is a Python package and environment manager. The installation process will create a dedicated container for the OpenBB software that isolates it from the rest of the system. Packages installed to a dedicated environment do not interfere with system or other Python environments. There are specific versions of packages, sourced only from Conda-Forge, which is why we specifically recommend installing within a freshly-made Conda Python environment. Make sure that the version of Miniconda3 installed is the x86/x64 version, no matter what CPU architecture the system has.
 
+Windows users should install [Git for Windows](https://git-scm.com/download/win), and run terminals with `git bash`.
+
+![Screenshot_20221119_010506](https://user-images.githubusercontent.com/85772166/202871659-9c93d87e-220e-48c2-aa7c-83dfe00b19d6.png)
+
 Download and install the appropriate version of Miniconda3 for the system:
 
 [MacOSX](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg)
@@ -115,6 +119,7 @@ conda install -c conda-forge git
 
 ```shell
 poetry install -E prediction
+poetry install -E jupyterlab
 ```
 
 This process concludes with a message, where x is the current version number:
